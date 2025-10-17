@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"github.com/joho/godotenv"
 
 	"github.com/spf13/cobra"
 )
@@ -14,6 +15,7 @@ var serveCmd = &cobra.Command{
 }
 
 func serve(cmd *cobra.Command, args []string) {
+	_ = godotenv.Load()
 	fmt.Println("serve called")
 }
 
