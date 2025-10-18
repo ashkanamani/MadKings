@@ -3,7 +3,6 @@ package service
 import (
 	"context"
 	"errors"
-	"fmt"
 	"github.com/ashkanamani/madkings/internal/entity"
 	"github.com/ashkanamani/madkings/internal/repository"
 	"time"
@@ -31,7 +30,6 @@ func (a *AccountService) CreateOrUpdate(ctx context.Context, account entity.Acco
 			savedAccount.FirstName = account.FirstName
 			return savedAccount, false, a.accounts.Save(ctx, savedAccount)
 		}
-		fmt.Println("heeeeeeeere")
 		return savedAccount, false, nil
 	}
 

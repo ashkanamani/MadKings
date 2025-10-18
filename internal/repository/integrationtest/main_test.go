@@ -25,9 +25,9 @@ func TestMain(m *testing.M) {
 			return err
 		})
 	redisPort = redisRes.GetPort("6379/tcp")
-	defer redisRes.Close()
 
 	// run tests
 	exitCode := m.Run()
+	_ = redisRes.Close()
 	os.Exit(exitCode)
 }
