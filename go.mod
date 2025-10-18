@@ -30,6 +30,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.9 // indirect
+	github.com/stretchr/objx v0.5.2 // indirect
 	golang.org/x/net v0.38.0 // indirect
 	golang.org/x/sys v0.37.0 // indirect
 	gopkg.in/telebot.v4 v4.0.0-beta.5 // indirect
